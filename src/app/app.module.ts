@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CkeditorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
